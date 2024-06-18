@@ -1,4 +1,11 @@
 /*ESTILO GERAL */
+:root {
+    --cor-primaria: #005eff;
+    --cor-secundaria: #FFFF;
+    --cor-terciaria: #000000;
+    --cor-quaternaria: #808080;
+    --cor-borda-habilidade: #1f1e1e;
+}
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +15,7 @@
 
 
 body {
-    background-color: #000;
+    background-color: var(--cor-terciaria);
     height: 100vh;
 }
 
@@ -25,7 +32,7 @@ body {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #005eff;
+    background-color: var(--cor-primaria);
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -33,18 +40,18 @@ body {
 }
 
 button:hover {
-    box-shadow: 0px 0px 25px #005eff;
+    box-shadow: 0px 0px 15px var(--cor-primaria);
     transform: scale(1.1);
 }
 
 h2.titulo {
-    color: #fff;
+    color: var(--cor-secundaria);
     font-size: 38px;
     text-align: center;
 }
 
 h2.titulo span {
-    color: #005eff;
+    color: var(--cor-primaria);
 }
 
 /* ESTILO DO CABEÇALHO */
@@ -65,14 +72,14 @@ header img {
 }
 
 header li {
-    color: #808080;
+    color: var(--cor-quaternaria);
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
 
 header li:hover {
-    color: #fff;
+    color: var(--cor-secundaria);
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -102,18 +109,18 @@ section.topo-do-site .flex {
 }
 
 .topo-do-site h1 {
-    color: #fff;
+    color: var(--cor-secundaria);
     font-size: 42px;
     line-height: 40px;
 }
 
 .topo-do-site .txt-topo-site h1 span {
-    color: #005eff;
+    color: var(--cor-primaria);
 
 }
 
 .topo-do-site .txt-topo-site p {
-    color: #fff;
+    color: var(--cor-secundaria);
     margin: 20px 0;
     font-size: 20px;
 }
@@ -145,7 +152,7 @@ section.especialidades .flex {
 }
 
 .especialidades .especialidades-box {
-    color: #fff;
+    color: var(--cor-secundaria);
     padding: 40px;
     border-radius: 20px;
     margin-top: 45px;
@@ -154,12 +161,12 @@ section.especialidades .flex {
 
 .especialidades .especialidades-box:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 12px #ff3c00fb;
+    box-shadow: 0 0 12px var(--cor-borda-habilidade);
 }
 
 .especialidades .especialidades-box i {
     font-size: 70px;
-    color: #005eff;
+    color: var(--cor-primaria);
 }
 
 .especialidades .especialidades-box h3 {
@@ -180,7 +187,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre {
-    color: #fff;
+    color: var(--cor-secundaria);
 }
 
 .sobre .img-sobre {
@@ -194,7 +201,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 span {
-    color: #005eff;
+    color: var(--cor-primaria);
     display: block;
 }
 
@@ -208,7 +215,7 @@ section.sobre .flex {
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: #005eff;
+    background-color: var(--cor-primaria);
     font-size: 22px;
     cursor: pointer;
     margin: 0 5px;
@@ -220,7 +227,6 @@ section.sobre .flex {
 
 section.projetos {
     padding: 80px 4%;
-    box-shadow: 0 0 30px 10px #ffffffa1;
 }
 
 section.projetos .interface .titulo {
@@ -228,7 +234,7 @@ section.projetos .interface .titulo {
 }
 
 section .titulo-projetos {
-    color: #fff;
+    color: var(--cor-secundaria);
 }
 
 section.projetos .flex {
@@ -244,11 +250,26 @@ section.projetos .flex {
 
 .flex-projetos {
     width: 384px;
-
+    text-align: justify;
+}
+.btn-repositorio {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--cor-quaternaria);
+    cursor: pointer;
+    transition: .5s;
 }
 
+.btn-repositorio:hover {
+    color: var(--cor-secundaria);
+    transform: scale(1.1);
+}
+
+
+
 section.projetos p {
-    color: #fff;
+    color: var(--cor-secundaria);
 }
 
 section.projetos h2 {
@@ -283,11 +304,11 @@ footer .line-footer {
 }
 
 .borda {
-    border-top: 2px solid #005eff;
+    border-top: 2px solid var(--cor-primaria);
 }
 
 footer .line-footer p i {
-    color: #005eff;
+    color: var(--cor-primaria);
     font-size: 24px;
 }
 
@@ -296,7 +317,7 @@ footer .line-footer p a {
 }
 
 footer .line-footer p {
-    color: #fff;
+    color: var(--cor-secundaria);
 }
 
 footer img {

@@ -29,3 +29,4 @@ document.getElementById("link-especialidades").addEventListener("click", functio
         behavior: "smooth"
     });
 });
+
